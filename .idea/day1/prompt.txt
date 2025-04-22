@@ -1,0 +1,60 @@
+please translate english word "dog" to korean.
+
+for example:
+1. banana: 바나나
+2. melon: 멜론
+3. cat: 고양이
+4. woman: 여성
+5. book: 책
+
+___
+Please decide sentiment of next movie review sentiment.
+
+
+Question: The storyline was dull and uninspiring
+
+For exmaple:
+1. "This movie is best thing of my life.": "positive"
+2. "I want to rate this movive 5 stars.": "positive"
+3. "Bull shit. Waste money.": "negative"
+4. "Marble Studio is gone. Come back Ironman.": "negative"
+5. "Untouchable, Gorgeos, Beautiful. It's Life.": "positive"
+
+___
+Convert the following natural language requests into SQL queries:
+1. "query salary over 50000 dollars.": SELECT * FROM employees WHERE salary > 50000;
+2. "query all products which are sold out.": SELECT * FROM products WHERE stock = 0;
+3. "query all name who math score over 90.": SELECT name FROM students WHERE math_score > 90;
+4. "query all orders after a month ago.": SELECT * FROM orders WHERE order_date >= DATE_SUB(CURDATE(), INTERVAL 30 DAY);
+5. "count customers by city": SELECT city, COUNT(*) FROM customers GROUP BY city;
+
+Request: "Find the average salary of employees in the marketing department."
+SQL Query:
+___
+Solve the following problem step-by-step: 345 + 678 - 123
+
+
+For Example:
+# Simple - 1
+Solve the following problem step-by-step: 23 + 47
+
+Step-by-step solution:
+1. split each number by decimal number. 23 => 20 + 3, 47 => 40 + 7
+2. add 1's digit. 3 + 7 => 10
+3. add 10's digit. 20 + 40 => 60
+4. add all step's result. 60 + 10 => 70
+
+Answer: 70
+
+# Simple - 2
+Solve the following problem step-by-step: 123 - 58
+
+Step-by-step solution:
+1. split each number by decimal number. 123 => 100 + 20 + 3, 58 => 50 + 8
+2. subtract 1's digit. if first number is less then second, decrease 1 next first numbers' digit. 3 - 8 => 5, 20 -> 10
+3. subtract 10's digit. if first number is less then second, decrease 1 next first numbers' digit. 10 - 50 => 60, 100 -> 0
+4. add all step's result. 60 + 5 = 65
+
+Answer: 65
+
+What is Result?
