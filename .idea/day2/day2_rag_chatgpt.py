@@ -45,8 +45,6 @@ import os
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_API_KEY"] = getpass.getpass()
 
-# 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
-
 """langchain hub 에서 prompt format 가져다 쓰기"""
 
 from langchain import hub
